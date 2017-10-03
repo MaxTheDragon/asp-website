@@ -5,14 +5,14 @@
     "authors": [
         {
             "name": "Max Waterman",
-            "email": "maxthedragon@asp-politiek.nl",
+            "email": "admin@asp-politiek.nl",
             "homepage": "https://asp-politiek.nl/",
             "role": "Administrator"
         }
     ],
     "autoload": {
         "psr-4": {
-            "": "src/"
+            "AppBundle\\": "src/AppBundle"
         },
         "classmap": [
             "app/AppKernel.php",
@@ -28,7 +28,7 @@
         ]
     },
     "require": {
-        "php": ">=5.5.9",
+        "php": ">=7.0",
         "doctrine/doctrine-bundle": "^1.6",
         "doctrine/orm": "^2.5",
         "incenteev/composer-parameter-handler": "^2.0",
@@ -68,6 +68,7 @@
         "symfony-bin-dir": "bin",
         "symfony-var-dir": "var",
         "symfony-web-dir": "web",
+        "symfony-tests-dir": "tests",
         "symfony-assets-install": "relative",
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
